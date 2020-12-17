@@ -1,0 +1,27 @@
+/*
+font-family:'Lato', sans-serif;
+font-family:'Roboto', sans-serif;
+*/
+
+.post-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70%;
+}
+
+.post-info{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70%;
+}
+#post-body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70%;
+}
+#submit-post{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70%;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+   font-size: 120%;
+}
+

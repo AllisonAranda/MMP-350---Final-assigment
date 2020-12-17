@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Opportunities of the day</title> 
+<center><img src="images/logohazel.png"></center>    
+<link href="style.css" rel="stylesheet" type="text/css">
+        
+   
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDK9exQFIJN27KhujSqQnEK5I2LLC9pejM",
+    authDomain: "hazel-69ca8.firebaseapp.com",
+    databaseURL: "https://hazel-69ca8.firebaseio.com",
+    projectId: "hazel-69ca8",
+    storageBucket: "hazel-69ca8.appspot.com",
+    messagingSenderId: "360420636221",
+    appId: "1:360420636221:web:37644140a405291b479c54",
+    measurementId: "G-ND4QEVXEHF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</head>
+<body>  
+    
+<h2>Log in</h2>
+    
+<div id="container">
+<!-- elements to let user login -->
+<div id="login">
+    <input type="text" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button id="login-button">Login</button>
+    <div class="button-separator"></div>
+</div>    
+	        <!-- elements in case user is logged in -->
+       
+        	
+        	<div id ="user-name"></div>
+        	<a id="edit-profile-link">My Profile</a>
+            <div class="button-separator"></div>
+            
+        	
+        </div>
+
+
+        <div id="heading">
+            <center><h1>Opportunities of the day</h1></center>
+        </div>
+ <!--here users will write a new post-->
+    
+<!-- check this later -->    
+<div id="write-post">
+ <div><textarea id="post-body" placeholder="What are you looking for?
+ Payment
+ How to contact you"></textarea></div>
+    <div><button id="submit-post">Publish</button></div>
+    </div>
+    
+ 
+         
+           
+    
+<!-- here posts will be showed-->
+<div id="posts">
+<div class="post">
+  <div class="post-text">Create opportunities, generate real connections</div>
+    <div class="post-info">
+      by <span class="post-author">Hazel</span>
+   <div class="post-date">December 2020</div>
+        
+               
+    </div>       </div></div>
+    <button id="logout-button">Log Out</button>
+         <center><div class="row" id="footer" >
+        
+        <a href="create.html">Search</a>
+        
+        <a href="profile.html">Profile</a>    
+        </div></center> 
+            
+
+	<!-- Scripts -->
+	<script src="js/helpers.js"></script>
+	<script src="js/publish.js"></script>
+	<script src="js/auth.js"></script>
+	<script src="js/displayPosts.js"></script>
+
+	<script>
+		fb.loadPosts();
+	</script>   
+    
+    
+</body>
+</html>
